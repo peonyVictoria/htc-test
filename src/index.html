@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTC-TEST</title>
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>	
+	<main>
+		<div class="user-tabs">
+		    <input id="tab-profile" type="radio" name="user-tabs" checked>
+		    <label for="tab-profile" class="box three-side" title="Профиль">Профиль</label>
+		 
+		    <input id="tab-friends" type="radio" name="user-tabs">
+		    <label for="tab-friends" title="Друзья пользователя">Друзья пользователя</label>
+		 
+		    <section id="content-tab-profile">
+		    	<div class="all-area-user-profile clearfix">
+			    	<div class="left-area-user-profile">
+				    	<img src="../img/UserPic.png" alt="user avatar">
+				    	<button class="btn">Добавить в друзья</button>
+			    	</div>
+			    	<div class="right-area-user-profile">
+			    		<div class="user-main-info">
+			    			<h1 id="username" onclick="setDisplayForChangeUserInfo(this, 'change-username')">Виталя Гора</h1>
+			    			<input style="display:none;" type="text" name="change-username" id="change-username">
+			    			<p>г. Нижние Шахты</p>
+			    		</div>
+			    		<div class="user-additional-info">
+			    			<table>
+								<tr>
+								    <td class="name-user-info">
+								    	<p>Семейное положение</p>
+								    </td>
+								    <td class="value-user-info">
+								    	<p id="value-user-marital-status">холост</p>
+								    </td>
+								</tr>
+								<tr>
+									<td class="name-user-info">
+										<p>Телефон</p>
+									</td>
+								    <td class="value-user-info">
+								    	<p id="value-user-phone" onclick="setDisplayForChangeUserInfo(this, 'change-phone')">+7 (440) 554-32-12</p>
+								    	<p><input style="display:none;" type="text" name="change-phone" id="change-phone"></p>
+								    </td>
+								</tr>
+								<tr>
+									<td class="name-user-info">
+										<p>E-mail</p>
+									</td>
+								    <td class="value-user-info">
+								    	<p id="value-user-email" onclick="setDisplayForChangeUserInfo(this, 'change-email')">vitalya@gora.ru</p>
+								    	<p><input style="display:none;" type="text" name="change-email" id="change-email"></p>
+								    </td>
+								</tr>
+							</table>
+			    		</div>
+			    		<div class="user-interests">
+			    			<p>Интересы</p>
+			    			<div id="interests" class="interests">
+				    			<span class="interest">музыка</span>
+				    			<span class="interest">компьютеры</span>
+				    			<span class="interest">радио</span>
+			    			</div>
+			    		</div>			    		
+			    	</div>
+			    </div>
+		    </section>  
+
+		    <section id="content-tab-friends">
+		        <div class="all-area-user-friends">
+			    	<div id="user-friends" class="user-friends">
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a href="#" class="user-link">Лев Бронштейн</a>
+				    			<p class="city">г. Ханты-Мансийск</p>
+				    			<p class="status">online</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic2.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Находка Капитал</a>
+				    			<p class="city">г. Усть-Бельск</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic3.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Яндекс Петренко</a>
+				    			<p class="city">г. Пермь</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic4.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Успех Возможностей</a>
+				    			<p class="city">г. Радонеж</p>
+				    			<p class="status">online</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic5.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Инна Нашлась</a>
+				    			<p class="city">г. Омск</p>
+				    			<p class="status">online</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic6.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Алла Подольская</a>
+				    			<p class="city">г. Петропавловск-Камчатский</p>
+				    			<p class="status">online</p>
+			    			</div>
+			    		</div>
+
+			    		<div class="user-friend">
+			    			<div class="avatar">
+			    				<img src="../img/Pic.png" alt="user avatar">
+			    			</div>
+			    			<div class="user-friend-info">
+				    			<a class="user-link">Тася Бронштейн</a>
+				    			<p class="city">г. Омск</p>
+				    			<p class="status">online</p>
+			    			</div>
+			    		</div>
+
+			    	</div>
+			    </div>
+		    </section> 
+		</div>
+
+		<section class="block-add-interest">
+			<form id="form-add-interest" action="#" style="display:block;">
+				<label for="name-interest">Название интереса:</label>
+				<input type="text" id="name-interest" required><br>				      
+				<p><button onclick="addInterest()">Добавить</button></p>
+			</form>
+		</section>
+	</main>
+    
+	<script src="../js/main.js"></script>
+	<script type="text/javascript">
+
+		$('.user-tabs > label').click(function(){
+			if($("#content-tab-friends").css('display') !=='none'){
+     			$(".user-friends").niceScroll().remove();
+     			$("#form-add-interest").css('display','block');
+     		} else {
+		    	$(".user-friends").niceScroll({
+		    		cursorcolor:"#0f7bb1", 
+		        	background:"#ededed", 
+		        	autohidemode:"false", 
+		        	cursorborder:"none", 
+		        	cursorborderradius:"4px"
+		      	});	
+		      	$("#form-add-interest").css('display','none');	    	
+	    	}
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    background-image: url("../img/Background.png"); 
+    margin-top: 45px;
+}
+
+.user-tabs {
+    width: 100%;
+    max-width: 492px;
+    min-height: 315px;
+
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.user-tabs > section {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.user-tabs > input {
+    display: none;
+    position: absolute;
+}
+
+.user-tabs > label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 5px 5px 0 0;
+    margin-right: 9px;
+    background-image: -webkit-linear-gradient(bottom, #1f68ac, #0685b4);
+    background-image: -moz-linear-gradient(bottom, #1f68ac, #0685b4);
+    background-image: -o-linear-gradient(bottom, #1f68ac, #0685b4);
+    background-image: -ms-linear-gradient(bottom, #1f68ac, #0685b4);
+    background-image: linear-gradient(to top, #1f68ac, #0685b4);
+    max-width: 169px;
+    max-height: 32px;
+}
+ 
+.user-tabs > label:hover {
+    color: #eee;
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+}
+
+.box:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 1px 3px rgba(0,0,0,.31);
+}
+
+.three-side:before {
+    top: 0;
+    bottom: 2px;
+    right: 0;
+    left: 0;
+}
+
+.user-tabs > input:checked + label {
+    color: #555;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    border-left: 35px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    max-width: 169px;
+}
+
+#tab-profile:checked~#content-tab-profile, 
+#tab-friends:checked~#content-tab-friends {
+    display: block;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.31);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.31);
+    box-shadow: 0 1px 3px rgba(0,0,0,.31);
+}
+
+/*FORM*/
+.block-add-interest {
+    margin-top:45px;
+}
+
+form {
+    max-width: 365px;
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.31);
+}
+
+form button {
+    border-radius: 2px;
+    padding: 7px;
+    border: 1px solid #d5d5d5;
+    color: #1574af;
+    font-family: Arial;
+    background: #fff;
+}
+
+form button:hover {
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    color: #000;
+    background: #f3f3f3;
+}
+
+#name-interest{
+    padding-left: 5px;
+    margin-top: 15px;
+    max-width: 30%;
+}

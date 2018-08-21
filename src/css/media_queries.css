@@ -1,0 +1,47 @@
+@media only screen and (max-width: 474px) {
+    .btn {
+        font-size: 10px;         
+    } 
+    #username {
+        font-size: 16px; 
+        margin-bottom: 3px; 
+    }
+    .user-main-info p {
+        font-size: 10px;
+    }
+    .user-additional-info p {
+        font-size: 9px;
+    }
+    .interest {
+        padding: 5px;
+    }
+    #change-username {
+        font-size: 12px; 
+    }
+    .user-main-info {
+        margin-bottom: 15px;
+    }
+    .user-interests {
+        margin-top:10px;
+    }
+    .block-add-interest {
+        margin-top:10px;
+    }
+    #name-interest{
+        margin-top: 7px;
+    }
+    form p {
+        margin-top: 9px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .user-tabs > label {
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 5px;
+        font-weight: 500;
+        max-width: 169px;
+        max-height: 32px;
+    } 
+}
